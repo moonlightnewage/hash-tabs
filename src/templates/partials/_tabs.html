@@ -1,0 +1,40 @@
+{% set 
+tabs = [
+	{
+		link: 'Link 1',
+		content: 'Block 1',
+		data: 'block-1'
+	},
+	{
+		link: 'Link 2',
+		content: 'Block 2',
+		data: 'block-2'
+	},
+	{
+		link: 'Link 3',
+		content: 'Block 3',
+		data: 'block-3'
+	},
+	{
+		link: 'Link 4',
+		content: 'Block 4',
+		data: 'block-4'
+	}
+] 
+%}
+   
+<section class="tabs">
+   
+    <!--begin tab links-->
+    <div class="tab-links js-tab-links">
+        {% for item in tabs %}
+        <a href="{{ item.data }}" class="tab-link">{{ item.link }}</a>
+        {% endfor %}
+    </div>
+    <!--end tab links-->
+    
+    <!--begin tab content-->
+    <div class="tab-contents js-tab-content"></div>
+    <!--end tab content-->
+    
+</section>

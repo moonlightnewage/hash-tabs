@@ -1,0 +1,5 @@
+ProjectTitle: hash-tabs
+
+PageList:
+- file: page.html
+  ready: 1
